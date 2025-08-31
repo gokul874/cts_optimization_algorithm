@@ -1,0 +1,128 @@
+/* Custom styles for the healthcare provider finder */
+
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.provider-card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.provider-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.rating-badge {
+    font-size: 0.875rem;
+    padding: 0.375rem 0.75rem;
+}
+
+.rating-5 {
+    background-color: var(--bs-success) !important;
+}
+
+.rating-4 {
+    background-color: var(--bs-info) !important;
+}
+
+.rating-3 {
+    background-color: var(--bs-warning) !important;
+}
+
+.rating-2 {
+    background-color: var(--bs-warning) !important;
+}
+
+.rating-1 {
+    background-color: var(--bs-danger) !important;
+}
+
+.cost-tag {
+    font-weight: 600;
+    color: var(--bs-success);
+}
+.availability-tag::before {
+    content: "●";
+    color: green;
+    margin-right: 5px;
+}
+
+.distance-tag {
+    font-weight: 600;
+    color: var(--bs-secondary);
+}
+
+.provider-type {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+#map {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.leaflet-container {
+    background-color: var(--bs-dark) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .provider-card {
+        margin-bottom: 1rem;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    
+    #map {
+        height: 250px !important;
+    }
+}
+
+/* Loading states */
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Custom scrollbar for provider list */
+#providersList {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+#providersList::-webkit-scrollbar {
+    width: 8px;
+}
+
+#providersList::-webkit-scrollbar-track {
+    background: var(--bs-dark);
+    border-radius: 4px;
+}
+
+#providersList::-webkit-scrollbar-thumb {
+    background: var(--bs-secondary);
+    border-radius: 4px;
+}
+
+#providersList::-webkit-scrollbar-thumb:hover {
+    background: var(--bs-light);
+}
