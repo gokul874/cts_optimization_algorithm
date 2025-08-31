@@ -1,1 +1,0 @@
-// This file contains general scripts for the admin section.
