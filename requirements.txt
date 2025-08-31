@@ -1,10 +1,85 @@
-email-validator>=2.2.0
-flask>=3.1.2
-flask-sqlalchemy>=3.1.1
-gunicorn>=23.0.0
-numpy>=2.3.2
-pandas>=2.3.2
-psycopg2-binary>=2.9.10
-sqlalchemy>=2.0.43
-werkzeug>=3.1.3
+# Core Flask Framework
+Flask==3.1.2
+Werkzeug==3.1.3
+Jinja2==3.1.6
+ItsDangerous==2.2.0
+MarkupSafe==3.0.2
+Click==8.2.1
+Blinker==1.9.0
+
+# Database and ORM
+Flask-SQLAlchemy==3.1.1
+SQLAlchemy==2.0.43
+psycopg2-binary==2.9.10
+Greenlet==3.2.4
+
+# Data Processing and Analysis
+pandas==2.3.2
+numpy==2.3.2
 scikit-learn>=1.5.1
+
+# Email Functionality
+email-validator==2.2.0
+dnspython==2.7.0
+
+# Web Server
+gunicorn==23.0.0
+
+# Date/Time Handling
+python-dateutil==2.9.0.post0
+pytz==2025.2
+tzdata==2025.2
+six==1.17.0
+
+# System Dependencies
+packaging==25.0
+typing-extensions==4.14.1
+
+# Geospatial Analysis
+geopy==2.4.0
+Shapely==2.0.2
+
+# Optimization Libraries
+scipy>=1.11.4
+
+# Database Migration (optional)
+Flask-Migrate>=4.0.5
+
+# Session Management (optional)
+Flask-Session>=0.5.0
+
+# Environment Variables (optional)
+python-dotenv>=1.0.0
+
+# CORS Support (if needed for API)
+Flask-CORS>=4.0.0
+
+# Configuration Management (optional)
+PyYAML>=6.0.1
+
+# HTTP Requests (if making external API calls)
+requests>=2.31.0
+
+# Excel File Support (if needed)
+openpyxl>=3.1.2
+xlrd>=2.0.1
+
+# Additional Geospatial (if using advanced features)
+folium>=0.15.0
+geopandas>=0.14.1
+
+# Development and Testing (optional)
+pytest>=7.4.3
+pytest-flask>=1.3.0
+black>=23.11.0
+flake8>=6.1.0
+
+# Production Server Alternative (optional)
+waitress>=2.1.2
+
+# Security (optional)
+Flask-Talisman>=1.1.0
+cryptography>=41.0.8
+
+# Progress Bars (for data processing)
+tqdm>=4.66.1
