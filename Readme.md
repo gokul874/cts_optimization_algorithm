@@ -1,4 +1,4 @@
-*# 🏥 Provider Network Optimization – Team NETSENSE
+## 🏥 Provider Network Optimization – Team NETSENSE
 
 *Team No:* 1  
 *College:* RMKCET  
